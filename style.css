@@ -1,0 +1,227 @@
+@import "nullstyle.css";
+
+body {
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+.menu {
+    display: flex;
+    justify-content: center;
+    background-color: #EFEFEF;
+}
+.menu__list {
+    display: flex;
+}
+.menu__item {
+    padding: 17px 0;
+    margin-right: 30px;
+}
+.menu__item:last-child {
+    margin-right: 0;
+}
+
+
+.header{
+    display: flex;
+    justify-content: space-between;
+    max-width: 1110px;
+    margin: 0 auto;
+}
+.header__left {
+    margin: auto 0;
+}
+.header__right {
+    display: flex;
+    align-items: center;
+}
+.header__number {
+    margin-right: 40px;
+    padding: 12px;
+}
+.header__call {
+    padding: 12px 26px;
+    border-radius: 40px;
+    border: 2px solid #66C05D;
+    margin: 40px 0;
+}
+nav {
+    display: flex;
+    justify-content: center;
+    max-width: 1110px;
+    margin: 0 auto;
+    font-size: 16px;
+}
+.nav__list {
+    display: flex;
+}
+.nav__item {
+    margin-right: 40px;
+    padding: 30px 0;
+}
+.nav__item:last-child {
+    margin-right: 0;
+}
+main {
+    background: #EFEFEF;
+}
+.base {
+    background: url('./images/background.png') center/cover no-repeat;
+    height: 600px;
+}
+
+.base__size {
+    display: flex;
+    align-items: center;
+    height: 100%;
+    max-width: 1110px;
+    margin: 0 auto;
+}
+.base__content {
+    width: 50%;
+    color: #FFFFFF;
+}
+.base__title {
+    font-size: 48px;
+    margin-bottom: 50px;
+    font-weight: 700;
+}
+.base__description {
+    margin-bottom: 50px;
+}
+.base__button {
+    text-align: center;
+    padding: 12px 26px;
+    border-radius: 40px;
+    border: 2px solid #FFFFFF;
+    max-width: 170px;
+}
+.offer {
+    margin-bottom: 100px;
+}
+.offer__size {
+    max-width: 1110px;
+    margin: 0 auto;
+}
+.offer__title {
+    font-size: 24px;
+    font-weight: 700;
+    margin: 70px 0 40px 0;
+}
+.offer__products {
+    display: flex;
+    justify-content: space-between;
+}
+.offer__chair {
+    text-align: center;
+    background: #FFFFFF;
+}
+.chair__img {
+    margin: 25px 0;
+}
+.chair__description {
+    margin: 0 30px 60px 30px;
+}
+.chair__price {
+    font-size: 21px;
+    font-weight: 700;
+    margin-bottom: 20px;
+}
+.chair__button {
+    color: #FFFFFF;
+    padding: 10px 40px;
+    border-radius: 30px;
+    background: #66C05D;
+    max-width: 130px;
+    margin: 0 auto;
+    border: none;
+    margin-bottom: 25px;
+}
+.about {
+    margin-bottom: 130px;
+}
+.about__size{
+    display: flex;
+    justify-content: space-between;
+    max-width: 1110px;
+    margin: 0 auto;
+    color: #FFFFFF;
+}
+.about__mail, .about__map {
+    position: relative;
+    background: #66C05D;
+    width: 48%;
+    height: 210px;
+    padding: 35px 40px;
+}
+.mail__title, .map__title {
+    font-size: 18px;
+    font-weight: 700;
+    margin-bottom: 25px;
+}
+.mail__description, .map__description {
+    margin-bottom: 25px;
+}
+input {
+    padding: 10px 25px;
+    max-width: 220px;
+    border-radius: 30px;
+    border: none;
+}
+.mail__img {
+    position: absolute;
+    top: 50px;
+    right: 45px;
+}
+.map__button {
+    padding: 10px 28px;
+    max-width: 170px;
+    border: 2px solid #FFFFFF;
+    border-radius: 30px;
+}
+
+.additional-info__size {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1110px;
+    margin: 0 auto;
+    height: 120px;
+}
+.additional-info__media {
+    display: flex;
+    justify-content: space-between;
+    width: 300px;
+}
+.additional-info__media div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+    border: 2px solid #66C05D;
+}
+.additional-info__right {
+    display: flex;
+    align-items: center;
+}
+.additional-info__number {
+    margin-right: 40px;
+    padding: 12px;
+}
+.additional-info__call {
+    padding: 12px 26px;
+    border-radius: 40px;
+    border: 2px solid #66C05D;
+}
+
+.copyright {
+    display: flex;
+    justify-content: space-between;
+    max-width: 1110px;
+    margin: 25px auto;
+    font-size: 12px;
+    color: #828282;
+}
+footer {
+    padding-bottom: 25px;
+}
