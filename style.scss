@@ -1,0 +1,338 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap');
+@import "nullstyle.css";
+
+//Переменные и шаблоны
+$bg_white: #FFFFFF;
+$bg_green: #66C05D;
+%center_section {
+    max-width: 1110px;
+    margin: 0 auto;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    background: #EFEFEF;
+}
+
+.menu {
+    display: flex;
+    justify-content: center;
+    .menu__list {
+        display: flex;
+        justify-content: space-evenly;
+        flex-wrap: wrap;
+        width: 70%;
+    }
+    .menu__item {
+        padding: 17px 0;
+    }
+}
+
+
+
+header {
+    background: $bg_white;
+    .header {
+        display: flex;
+        justify-content: space-between;
+        @extend %center_section;
+
+    }
+    .header__left {
+        max-width: 260px;
+        margin: auto 0;
+    }
+    
+    .header__left img {
+        width: 100%;
+    }
+    
+    .header__right {
+        display: flex;
+        justify-content: end;
+        align-items: center;
+        width: 70%;
+    }
+    
+    .header__call {
+        font-weight: 500;
+        text-align: center;
+        padding: 12px 26px;
+        border-radius: 40px;
+        border: 2px solid $bg_green;
+        margin: 40px 0;
+    }
+    
+    .header__number {
+        margin-top: 10px;
+    }
+}
+
+
+
+nav {
+    display: flex;
+    justify-content: center;
+    @extend %center_section;
+    font-size: 16px;
+    .nav__list {
+        display: flex;
+        justify-content: space-evenly;
+        flex-wrap: wrap;
+        width: 70%;
+    }
+    
+    .nav__item {
+        padding: 30px 0;
+    }
+}
+
+
+.base {
+    background: url('./images/background.png') center/cover no-repeat;
+    height: 600px;
+    .base__size {
+        display: flex;
+        align-items: center;
+        height: 100%;
+        @extend %center_section;
+    }
+    
+    .base__content {
+        color: $bg_white;
+    }
+    
+    .base__title {
+        font-size: 48px;
+        margin-bottom: 50px;
+        font-weight: 700;
+    }
+    
+    .base__description {
+        margin-bottom: 50px;
+    }
+    
+    .base__button {
+        text-align: center;
+        padding: 12px 26px;
+        border-radius: 40px;
+        border: 2px solid $bg_white;
+        max-width: 170px;
+    }
+}
+
+.offer {
+    margin-bottom: 100px;
+    .offer__size {
+        @extend %center_section;
+    }
+    
+    .offer__title {
+        font-size: 24px;
+        font-weight: 700;
+        margin: 70px 0 40px 0;
+    }
+    
+    .offer__products {
+        display: flex;
+        justify-content: space-evenly;
+        flex-wrap: wrap;
+    }
+    
+    .offer__chair {
+        text-align: center;
+        background: $bg_white;
+    }
+    
+    .chair__img {
+        margin: 25px 0;
+    }
+    
+    .chair__description {
+        margin: 0 30px 60px 30px;
+    }
+    
+    .chair__price {
+        font-size: 21px;
+        font-weight: 500;
+        margin-bottom: 20px;
+    }
+    
+    .chair__button {
+        color: $bg_white;
+        padding: 10px 40px;
+        border-radius: 30px;
+        background: $bg_green;
+        max-width: 130px;
+        margin: 0 auto;
+        border: none;
+        margin-bottom: 25px;
+    }
+}
+
+
+
+.about {
+    margin-bottom: 130px;
+    .about__size {
+        display: flex;
+        justify-content: space-evenly;
+        flex-wrap: wrap;
+        @extend %center_section;
+        color: $bg_white;
+        
+    }
+    .about__mail,
+    .about__map {
+        position: relative;
+        background: $bg_green;
+        margin: 0 auto;
+        height: 250px;
+        width: 45%;
+        padding: 35px 40px;
+    }
+    
+    .mail__title,
+    .map__title {
+        font-size: 18px;
+        font-weight: 700;
+        margin-bottom: 25px;
+    }
+    
+    .mail__description,
+    .map__description {
+        max-width: 250px;
+        margin-bottom: 25px;
+    }
+    
+    input {
+        padding: 10px 25px;
+        max-width: 220px;
+        border-radius: 30px;
+        border: none;
+    }
+    
+    .mail__img {
+        position: absolute;
+        top: 50px;
+        right: 45px;
+    }
+    
+    .map__button {
+        text-align: center;
+        padding: 10px 28px;
+        max-width: 170px;
+        border: 2px solid $bg_white;
+        border-radius: 30px;
+    }
+}
+
+
+.additional-info {
+    background: $bg_white;
+    .additional-info__size {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        @extend %center_section;
+        height: 120px;
+    }
+    
+    .additional-info__media {
+        display: flex;
+        justify-content: space-between;
+        width: 25%;
+    }
+    
+    .additional-info__media div {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 20%;
+        border-radius: 50%;
+        padding: 5px;
+        border: 2px solid $bg_green;
+    }
+    
+    .additional-info__media div img {
+        width: 100%;
+    }
+    
+    .additional-info__address {
+        width: 30%;
+    }
+    
+    .additional-info__right {
+        display: flex;
+        align-items: center;
+    }
+    
+    .additional-info__call {
+        text-align: center;
+        padding: 12px 26px;
+        border-radius: 40px;
+        border: 2px solid $bg_green;
+    }
+}
+
+.copyright {
+    display: flex;
+    justify-content: space-between;
+    max-width: 1110px;
+    margin: 25px auto;
+    font-size: 12px;
+    color: #828282;
+}
+
+footer {
+    padding-bottom: 25px;
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (max-width: 600px) {
+    .mail__img {
+        display: none;
+    }
+    .nav__list {
+        width: 80%;
+    }
+    .menu__list {
+        width: 80%;
+    }
+    .about .about__size .about__mail,
+    .about .about__size .about__map {
+        width: 80%;
+    }
+    .additional-info div {
+        padding: 0;
+    }
+}
+
+@media only screen and (min-width: 600px) {
+    .nav__list {
+        width: 80%;
+    }
+    .menu__list {
+        width: 80%;
+    }
+    .about .about__size .about__mail,
+    .about .about__size .about__map {
+        width: 80%;
+    }
+    .additional-info div {
+        padding: 3px;
+    }
+}
+@media only screen and (min-width: 900px) {
+    .additional-info div {
+        padding: 10px;
+    }
+    .about__mail,
+    .about__map {
+        width: 45%;
+    }
+    .about .about__size .about__mail,
+    .about .about__size .about__map {
+        width: 45%;
+    }
+}
